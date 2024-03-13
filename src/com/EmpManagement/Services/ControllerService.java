@@ -65,6 +65,7 @@ public class ControllerService {
                     System.out.println(employeesWithTheSameName);
                     break;
                 case 4:
+                    sc.nextLine();
                     System.out.println("Enter Manager name: ");
                     String managerName = sc.nextLine();
                     List<String> employeesWithGivenManager = managerService.findReporteesGivenManager(managerName,company.getEmployeeList());
